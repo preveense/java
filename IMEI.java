@@ -10,5 +10,15 @@ public class {
     } 
     return sum;
   }
+  
+  Boolean isValidIMEI(String IMEI) {
+    return ((sofd(IMEI.substring(0,14)) * 9 ) %10 ) == Integer.parseInt(IMEI.substring(14,15)) ? true : false;
+  }
+  
+  public static void main (String args[]) {
+    
+    
+    //isValidIMEI("351451208401216") -> true
+  }
 
 }
